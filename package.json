@@ -1,0 +1,48 @@
+{
+    "name": "game_card",
+    "version": "1.0.0",
+    "description": "",
+    "main": "script.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "format": "prettier --write .",
+        "lint:js": "eslint ./*.js",
+        "lint:css": "stylelint ./css/**/*.css",
+        "lint": "npm run lint:js && npm run lint:css",
+        "prepare": "husky install",
+        "build": "NODE_ENV=production webpack",
+        "start": "webpack-dev-server --open"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/crazyAndrej/card_game_study.git"
+    },
+    "author": "Andrejs Lukasevics",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/crazyAndrej/card_game_study/issues"
+    },
+    "homepage": "https://github.com/crazyAndrej/card_game_study#readme",
+    "dependencies": {
+        "lodash": "^4.17.21",
+        "prettier": "^2.7.1"
+    },
+    "devDependencies": {
+        "copy-webpack-plugin": "^11.0.0",
+        "css-loader": "^6.7.1",
+        "css-minimizer-webpack-plugin": "^4.2.2",
+        "eslint": "^8.26.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "html-webpack-plugin": "^5.5.0",
+        "husky": "^8.0.1",
+        "mini-css-extract-plugin": "^2.6.1",
+        "stylelint": "^14.14.0",
+        "stylelint-config-prettier": "^9.0.3",
+        "stylelint-config-standard": "^29.0.0",
+        "stylelint-prettier": "^2.0.0",
+        "webpack": "^5.74.0",
+        "webpack-cli": "^4.10.0",
+        "webpack-dev-server": "^4.11.1"
+    }
+}
