@@ -85,12 +85,12 @@ input[type='radio'] {
 
 .field-control,
 .game-lever-text:hover {
-    color: rgb(140 139 139);
+    color: #8c8b8b;
 }
 
 .field-control,
 .game-lever-text:checked {
-    color: rgb(65 65 65);
+    color: #414141;
 }
 
 .play-field {
@@ -384,7 +384,7 @@ input[type='radio'] {
 }
 
 .game-card.successfully {
-    background: rgb(52 201 87);
+    background: #34c957;
 }
 
 .game-card i + i:hover {

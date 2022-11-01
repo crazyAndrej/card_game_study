@@ -5,9 +5,9 @@
     "main": "script.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "format": "prettier --write .",
+        "format": "prettier --write .CARD_GAME",
         "lint:js": "eslint ./*.js",
-        "lint:css": "stylelint ./css/**/*.css",
+        "lint:css": "stylelint ./*.css",
         "lint": "npm run lint:js && npm run lint:css",
         "prepare": "husky install",
         "build": "NODE_ENV=production webpack",
@@ -25,7 +25,9 @@
     "homepage": "https://github.com/crazyAndrej/card_game_study#readme",
     "dependencies": {
         "lodash": "^4.17.21",
-        "prettier": "^2.7.1"
+        "prettier": "^2.7.1",
+        "remove-files-webpack-plugin": "^1.5.0",
+        "scss-loader": "^0.0.1"
     },
     "devDependencies": {
         "copy-webpack-plugin": "^11.0.0",
@@ -34,9 +36,12 @@
         "eslint": "^8.26.0",
         "eslint-config-prettier": "^8.5.0",
         "eslint-plugin-prettier": "^4.2.1",
+        "html-webpack-link-type-plugin": "^1.1.1",
         "html-webpack-plugin": "^5.5.0",
         "husky": "^8.0.1",
         "mini-css-extract-plugin": "^2.6.1",
+        "sass": "^1.55.0",
+        "sass-loader": "^13.1.0",
         "stylelint": "^14.14.0",
         "stylelint-config-prettier": "^9.0.3",
         "stylelint-config-standard": "^29.0.0",
